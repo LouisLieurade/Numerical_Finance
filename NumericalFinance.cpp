@@ -56,7 +56,7 @@ void test_MonteCarlo(bool antithetic_method = false, bool pseudo_variate_control
 	//double var = asset.get_pseudo_variate_control_variance();
 
 	std::cout << "Bravo votre projet est termine, le prix est de : " << prix << std::endl;
-	std::cout << "Bravo à vous deux, la variance est de : " << var << std::endl;
+	std::cout << "Bravo Ã  vous deux, la variance est de : " << var << std::endl;
 	std::cout << "L'intervalle de confiance pour le prix est : [" << prix << " - " << 1.96 * std::pow(var / n_sim, 0.5) << "; " << prix << " + " << 1.96 * std::pow(var / n_sim, 0.5)<< "] a 95%." << std::endl;
 }
 
@@ -69,7 +69,5 @@ int main()
 	bool pseudo_variate_control = true;
 	bool pseudo_random_method = true;
 	test_MonteCarlo(antithetic_method, pseudo_variate_control, pseudo_random_method);
-
-	
 }
 
